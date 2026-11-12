@@ -4,7 +4,7 @@ resource "aws_vpc" "main" {
   enable_dns_support   = true
 
   tags = {
-    Name        = "main-vpc"
+    Name        = "learn-hcp-terraform-vpc"
     Environment = "test"
   }
 }
@@ -16,7 +16,7 @@ resource "aws_subnet" "public" {
   availability_zone       = var.subnets_az
 
   tags = {
-    Name        = "main-subnet-public"
+    Name        = "learn-hcp-terraform-public-subnet"
     Environment = "test"
   }
 }
@@ -27,7 +27,7 @@ resource "aws_subnet" "private" {
   availability_zone = var.subnets_az
 
   tags = {
-    Name        = "main-subnet-private"
+    Name        = "learn-hcp-terraform-private-subnet"
     Environment = "test"
   }
 }
