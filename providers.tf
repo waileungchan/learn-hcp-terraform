@@ -1,7 +1,5 @@
 terraform {
-
-  required_version = ">= 1.17.0"
-
+  required_version = ">= 1.12.0"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -9,6 +7,12 @@ terraform {
     }
   }
 
+  cloud {
+    organization = "TA-004-HCP"
+    workspaces {
+      name = "workspace-demo-ta-004"
+    }
+  }
 }
 
 provider "aws" {
