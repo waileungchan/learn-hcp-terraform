@@ -6,7 +6,6 @@ terraform {
       version = "6.73.0"
     }
   }
-
   cloud {
     organization = "TA-004-HCP"
     workspaces {
